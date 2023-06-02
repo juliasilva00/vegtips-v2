@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+  
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.login-page {
+  height: 100vh;
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.login-container{
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  max-width: 430px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.login-container .form-login {
+  padding: 30px;
+}
+
+.login-container .form-login  .title{
+  position: relative;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+
+.form-login .campo-input{
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.campo-input input{
+  height: 100%;
+  width: 100%;
+  padding: 0 35px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  border-top: 2px solid transparent;
+}
+
+.campo-input  .btn{
+  text-align:center ;
+
+}
+
+.campo-input input:is(:focus, :valid){
+  border-bottom-color: #01473E;
+}
+
+.input-field .icone-user .icone-lock {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+
+.form-login .checkbox-text{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+
+}
+
+.checkbox-text .checkbox-content{
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-content input{
+  accent-color: #01473E;
+  margin: 0 8px -2px 4px;
+}
+
+
+.form-login text {
+  color: black;
+}
+
+.form-login a.text {
+  text-decoration: none;
+  color: #01473E;
+}
+
+.form-login a {
+  text-decoration: none;
+}
+
+
+
+.form-login a:hover {
+  text-decoration: underline;
+}
+
+.form-login .button{
+  margin-top: 35px;
+}
+
+.form-login .button input{
+  font-size: 24px;
+  font-weight: 500;
+  border: none;
+  color: #02A28F;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-login .login-singup{
+  margin-top: 30px;
+}
+

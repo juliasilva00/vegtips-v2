@@ -1,0 +1,129 @@
+.detalhe-receita-card {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    margin-left: 8px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+  }
+  
+  .detalhe-receita-card-container {
+    margin-bottom: 10px;
+  }
+  
+  .detalhe-receita-card-title {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  
+  .detalhe-receita-card-title-container {
+    padding: 20px;
+    color: black;
+    background-color:white;
+    width: 100%;
+  }
+  
+  .detalhe-receita-card-description {
+    margin: 0;
+    color:  black;
+    font-size: 1rem;
+    text-align: left;
+    padding-top: 3px;
+  }
+
+  input[type='checkbox']{
+    margin-top: 10px;
+  }
+  .detalhe-receita-card-subtitle{
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  
+  li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+@media screen and (min-width: 768px) {
+    .detalhe-receita-card {
+      width: calc(33.33% - 20px);
+      height: auto;
+      margin-bottom: 0;
+    }
+  
+    .detalhe-receita-card-container {
+      display: inline-block;
+      margin-right: 20px;
+    }
+  
+    .detalhe-receita-card-title-container {
+      padding: 10px;
+    }
+  
+    .detalhe-receita-card-title {
+      font-size: 1.2rem;
+    }
+  
+    .detalhe-receita-card-description{
+      font-size: 0.8rem;
+    }
+
+    input[type='checkbox']{
+      padding-top: 10px;
+      color: red;
+    }
+  }
+  
+  
+  /* Estilos para computadores */
+  @media only screen and (min-width: 768px) {
+    .detalhe-receita-card {
+      width: 25%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      margin-bottom: 20px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 10px;
+      margin-left: 37%;
+      margin-top: 15px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      
+    }
+    
+    .detalhe-receita-card-container {
+      margin-bottom: 10px;
+    }
+    
+    .detalhe-receita-card-title {
+      margin: 0;
+      font-size: 1.5rem;
+      text-align: left;
+    }
+    
+    .detalhe-receita-card-title-container {
+      padding: 20px;
+      color: black;
+      background-color:white;
+      width: 100%;
+    }
+    
+    .detalhe-receita-card-description {
+      margin: 0;
+      color:  black;
+      font-size: 1rem;
+      text-align: left;
+      padding-top: 3px;
+    }
+  }
+  

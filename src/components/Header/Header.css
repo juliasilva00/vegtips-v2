@@ -1,0 +1,36 @@
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+    #header{
+        background-color: #02A28F;
+        color: white;
+        margin-top: 2%;
+        width: 95%;
+        margin-left: 2%;
+        border-radius: 5px;
+        text-align: left;
+        padding-top: 1%;
+        padding-left: 3%;
+        height: 25px;
+        font-weight: bold;
+        font-size: small;
+    }
+  }
+  
+  /* Estilos para computadores */
+  @media only screen and (min-width: 768px) {
+    #header{
+        background-color: #02A28F;
+        color: white;
+        margin-top: 2%;
+        width: 95%;
+        margin-left: 2%;
+        border-radius: 5px;
+        text-align: left;
+        padding-top: 0.5%;
+        padding-left: 3%;
+        height: 30px;
+        font-weight: bold;
+        font-size: small;
+    }
+  }
+  
