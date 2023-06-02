@@ -18,7 +18,7 @@ const DetalheReceita = () => {
 
   useEffect(() => {
     fetchReceita();
-  }, []);
+  });
 
   useEffect(() => {
     console.log({receita})
