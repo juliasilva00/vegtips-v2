@@ -23,7 +23,7 @@ const Navbar = () => {
 
         try{
             await logout();
-            navegacao('/')
+            navegacao('/login')
 
         } catch (error) {
             console.log(error)
@@ -40,7 +40,7 @@ const Navbar = () => {
 
                 <div>
                     <ul id="navbar" className={clicked ? "#navbar active" : "#navbar"}>
-                        <Link to="/home" className="nav-links" onClick={handleClick}>
+                        <Link to="/" className="nav-links" onClick={handleClick}>
                             <li><a href="index.html" className="active">Home</a></li>
                         </Link>
                         <li>
@@ -58,7 +58,7 @@ const Navbar = () => {
                         </Link>
 
                         <li><a href='index.html'>Perfil</a></li>
-                        <li><a href='index.html' onClick={handleLogout} > Sair</a></li>
+                        <li><a href='/login' onClick={handleLogout} > Sair</a></li>
                     </ul>
                 </div>
 

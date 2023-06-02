@@ -17,15 +17,15 @@ const Router = () => {
         <BrowserRouter>
             <Routes>
                 
-                <Route path="/" element={<Login />} />
-                <Route path="/home" element={<Home />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/login" element={<Login />} />
                 <Route path="/cadastro" element={<Cadastro />} />
                 <Route path="/restaurantes" element={<Restaurante />} />
                 <Route path="/receitas" element={<Receita />} />
                 <Route path="/dicas" element={<Dicas />} />
                 <Route path="/detalhesRestaurante" element={<DetalheRestaurante />} />
                 <Route path="/detalhesReceita" element={<DetalheReceita />} />
-                <Route path="/detalhesDica" element={<DetalheDica />} />
+                <Route path="/detalhesDica/:id" element={<DetalheDica />} />
             </Routes>
         </BrowserRouter>
     )
