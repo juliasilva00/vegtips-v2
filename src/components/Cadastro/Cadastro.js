@@ -36,7 +36,7 @@ function Cadastro() {
      const response = await criarUsuario(nome, email, preferenciaAlimentar, dataNascimento, senha)
       if(response.user){
         //se o cadastro for sucesso vai ter o user
-        navegacao('/')
+        navegacao('/login')
       }     
 
     }

@@ -26,7 +26,7 @@ function Login() {
 
             try{
                 await logarUsuario( email, senha)
-                navegacao('/home')
+                navegacao('/')
                 console.log(e.message)
     
     

@@ -1,28 +1,47 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar/Navbar'
 import SearchBar from './SearchBar/SearchBar';
 import Header from './Header/Header';
 import ListCard from './ListCard/ListCard';
-import dica1 from '../assets/images/diabete.png';
-import dica2 from '../assets/images/sustentabilidade.jpg';
-import dica3 from '../assets/images/religioes.jpg';
 import { Link } from 'react-router-dom'
 
+
+
 function Dicas() {
+  const [dicas, setDicas] = useState([]);
+
+  useEffect(() => {
+    fetchDicas();
+  }, []);
+
+  async function fetchDicas() {
+    try {
+      const response = await fetch('https://64794810a455e257fa6312f2.mockapi.io/api/dicas');
+      const data = await response.json();
+      setDicas(data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <div>
-        <Navbar/>
-        <h2 className='titulo'>Dicas e Informações</h2>
-        <SearchBar placeholderText='Procure por uma dica...'/>
-        <Header titulo='Mais Recentes'/>
-        <Link to="/detalhesDica"> 
-        <ListCard listaCardTitulo="Vegetarianos e Diabete" descricao="Estudos sugerem que seguir uma dieta vegetariana pode ajudar a reduzir o risco de desenvolver diabetes tipo 2. Isso pode ser devido..." listCardImage={dica1}/>
+      <Navbar />
+      <h2 className='titulo'>Dicas e Informações</h2>
+      <SearchBar placeholderText='Procure por uma dica...' />
+      <Header titulo='Mais Recentes' />
+      {dicas.map((dica) => (
+        <Link to={`/detalhesDica/${dica.id}`} key={dica.id}>
+          <ListCard
+            listaCardTitulo={dica.titulo}
+            descricao={dica.descricao}
+            listCardImage={dica.imagemUrl}
+          />
         </Link>
-        <ListCard listaCardTitulo="Sustentabilidade Vegana" descricao="A dieta vegana é uma das maneiras mais sustentáveis de se alimentar. Isso porque ela pode reduzir significativamente a pegada ambiental..." listCardImage={dica2}/>
-        <ListCard listaCardTitulo="Religiões e Vegetarianismo" descricao="Algumas religiões têm tradições vegetarianas ou recomendam a adoção de uma dieta baseada em plantas. Por exemplo, o hinduísmo, o budismo..." listCardImage={dica3}/>
-
+      ))}
     </div>
-  )
+  );
 }
+
 
 export default Dicas
