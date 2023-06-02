@@ -30,7 +30,7 @@ const Receita = () => {
           <ListCard
             listaCardTitulo={receita.titulo}
             descricao={receita.descricao}
-            listCardImage={receita.imagemUrl}
+            listCardImage={receita.imagemURL}
           />
         </Link>
       ))}
