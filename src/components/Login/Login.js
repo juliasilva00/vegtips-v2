@@ -13,7 +13,7 @@ function Login() {
 
     const {  logarUsuario } = useAuth();
 
-    const [error, setError] = useState('');
+    const [setError] = useState('');
     const [senha, setSenha] = useState('');
     const [email, setEmail] = useState('');
     const navegacao = useNavigate()
@@ -70,7 +70,7 @@ function Login() {
                                         <input type="checkbox" name="" id="logCheck" />
                                         <label for="logCheck" className="text">Lembre-me</label>
                                     </div>
-                                    <a href="#" className="text">Esqueci Senha</a>
+                                    <a href="index.html" className="text">Esqueci Senha</a>
                                 </div>
                               
                                 <div className="campo-input button">

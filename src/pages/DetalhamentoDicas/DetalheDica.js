@@ -10,7 +10,7 @@ const DetalheDica = () => {
       <Navbar />
       <h2 className='titulo'>Dicas e Informações</h2>
       <div id='detalhe-dica-card ' className='detalhe-dica-card  detalhe-dica-card-container detalhe-dica-card-content'>
-        <img className='coverImage' src={dica} />
+        <img className='coverImage' src={dica} alt="imagem dica" />
         <div className='detalhe-dica-card-title-container' id='detalhe-dica-card ' >
           <h1 className='detalhe-dica-card-title'>Vegetarianos e Diabete</h1>
           <p className='detalhe-dica-card-description'>Os vegetarianos, aqueles que adotam uma dieta livre

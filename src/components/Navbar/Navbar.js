@@ -41,7 +41,7 @@ const Navbar = () => {
                 <div>
                     <ul id="navbar" className={clicked ? "#navbar active" : "#navbar"}>
                         <Link to="/home" className="nav-links" onClick={handleClick}>
-                            <li><a className="active">Home</a></li>
+                            <li><a href="index.html" className="active">Home</a></li>
                         </Link>
                         <li>
                             <Link to="/restaurantes" className="nav-links" onClick={handleClick}>
@@ -50,15 +50,15 @@ const Navbar = () => {
                         </li>
 
                         <Link to="/receitas" className="nav-links" onClick={handleClick}>
-                            <li><a>Receitas</a></li>
+                            <li><a href="index.html">Receitas</a></li>
                         </Link>
 
                         <Link to="/dicas" className="nav-links" onClick={handleClick}>
-                            <li><a>Dicas</a></li>
+                            <li><a href='index.html'>Dicas</a></li>
                         </Link>
 
-                        <li><a >Perfil</a></li>
-                        <li><a onClick={handleLogout} > Sair</a></li>
+                        <li><a href='index.html'>Perfil</a></li>
+                        <li><a href='index.html' onClick={handleLogout} > Sair</a></li>
                     </ul>
                 </div>
 

@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from './Navbar/Navbar'
 import SearchBar from './SearchBar/SearchBar';
 import Header from './Header/Header';
-import Card from './Card/Card';
 import ListCard from './ListCard/ListCard';
 import dica1 from '../assets/images/diabete.png';
 import dica2 from '../assets/images/sustentabilidade.jpg';

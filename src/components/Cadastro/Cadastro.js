@@ -20,7 +20,7 @@ function Cadastro() {
     const [dataNascimento, setDataNascimento] = useState('');
     const [senha, setSenha] = useState('');
     const [confirmarSenha, setConfirmarSenha] = useState('');
-    const [error, setError] = useState('');
+    const [setError] = useState('');
     const navegacao = useNavigate();
 
 

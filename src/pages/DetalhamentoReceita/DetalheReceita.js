@@ -9,7 +9,7 @@ const DetalheReceita = () => {
         <Navbar/>
         <h2 className='titulo'>Receitas</h2>
         <div id='detalhe-receita-card ' className='detalhe-receita-card  detalhe-receita-card-container detalhe-receita-card-content'>
-        <img src={receita1}/>
+        <img src={receita1} alt="imagem receita"/>
          <div className='detalhe-receita-card-title-container' id='detalhe-receita-card ' >
             
             <p className='detalhe-receita-card-description'>
